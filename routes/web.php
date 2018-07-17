@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index');
+Route::post('/', 'HomeController@submit');
+Route::get('/edit', 'HomeController@edit');
+
+
 
 
 Route::group(['prefix' => 'admin'], function () {
