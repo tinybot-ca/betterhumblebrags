@@ -28,6 +28,7 @@ class HomeController extends Controller
         $brag = Brag::where('id', request('id'))->first();
         $customText = request()->comment;
 
+        // This is the image template
         $img = Image::make('images/humblebrag.jpg');
 
         $img->text($brag->description, 20, 20, function($font) {
@@ -48,7 +49,7 @@ class HomeController extends Controller
             $font->angle(0);
         });
 
-
+        // Todo: image filename should be unique and only stored temporarily (user should be able to upload to Twitter/Facebook)
         $img->save('images/brags/test.jpg');
 
         return view('edit', ['brag' => $brag, 'customText' => $customText]);
