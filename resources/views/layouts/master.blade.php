@@ -33,12 +33,12 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
     <!-- Bookmark Icons -->
-    <link href="{{ asset('images/apple-touch-icon.png') }}" rel="apple-touch-icon" />
+    {{-- <link href="{{ asset('images/apple-touch-icon.png') }}" rel="apple-touch-icon" />
     <link href="{{ asset('images/apple-touch-icon-152x152.png') }}" rel="apple-touch-icon" sizes="152x152" />
     <link href="{{ asset('images/apple-touch-icon-167x167.png') }}" rel="apple-touch-icon" sizes="167x167" />
     <link href="{{ asset('images/apple-touch-icon-180x180.png') }}" rel="apple-touch-icon" sizes="180x180" />
     <link href="{{ asset('images/icon-hires.png') }}" rel="icon" sizes="256x256" />
-    <link href="{{ asset('images/icon-normal.png') }}" rel="icon" sizes="128x128" />
+    <link href="{{ asset('images/icon-normal.png') }}" rel="icon" sizes="128x128" /> --}}
 </head>
 
 <body>
