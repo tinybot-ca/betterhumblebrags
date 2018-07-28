@@ -15,9 +15,10 @@ Route::get('/', 'HomeController@index');
 Route::post('/', 'HomeController@submit');
 Route::get('/edit', 'HomeController@edit');
 
-
-
-
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
