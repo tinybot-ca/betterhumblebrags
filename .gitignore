@@ -12,3 +12,4 @@ npm-debug.log
 yarn-error.log
 .env
 /database/database.sqlite
+/public/images/brags/test.jpg
