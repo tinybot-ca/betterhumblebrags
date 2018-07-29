@@ -49,7 +49,7 @@ class HomeController extends Controller
             $font->angle(0);
         });
 
-        // Todo: image filename should be unique and only stored temporarily (user should be able to upload to Twitter/Facebook)
+        // Todo: image filename should be unique and only stored temporarily (user should be able to upload/share to Twitter/Facebook)
         $img->save('images/brags/test.jpg');
 
         return view('edit', ['brag' => $brag, 'customText' => $customText]);
