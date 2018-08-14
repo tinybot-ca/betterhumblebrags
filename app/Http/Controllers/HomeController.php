@@ -16,8 +16,7 @@ class HomeController extends Controller
 
     public function index()
     {
-        $brags = Brag::all();
-        $brag = $brags->random();
+        $brag = Brag::inRandomOrder()->first();
 
         // dd($brag->description);
         return view('index', compact('brag'));
