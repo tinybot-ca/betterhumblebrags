@@ -31,6 +31,7 @@ class HomeController extends Controller
         // This is the image template
         $img = Image::make('images/humblebrag.jpg');
 
+        // This is "Text Area 1"
         $img->text($brag->description, 20, 20, function($font) {
             $font->file(public_path('font.ttf'));
             $font->size(32);
@@ -40,6 +41,7 @@ class HomeController extends Controller
             $font->angle(0);
         });
 
+        // This is "Text Area 2"
         $img->text($customText, 20, 350, function($font) {
             $font->file(public_path('font.ttf'));
             $font->size(32);
