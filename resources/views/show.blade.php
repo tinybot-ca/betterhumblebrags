@@ -3,6 +3,12 @@
 @section ('content')
 
 <div class="container">
+    @if (count($errors))
+        @foreach ($errors->all() as $errorMessage)
+        <div class="alert alert-danger">{{ $errorMessage }}</div>
+        @endforeach
+    @endif
+    
     <div class="row justify-content-center">
         <div class="col-md-8">
 
@@ -66,11 +72,11 @@
                 <div class="card-body">
 
                     <p>
-                        <img class="responsive" width="100%" src="{{ asset('images/brags/' . session('brag_filename')) }}" />
+                        <img class="responsive" width="100%" src="{{ asset('images/brags/' . $brag_filename) }}" />
                     </p>
 
-                    <button class="btn btn-primary">Twitter</button>
-                    <button class="btn btn-primary">Facebook</button>
+                    <a class="btn btn-primary" href="{{ url('/twit') }}">Twitter</a>
+                    <a class="btn btn-primary" href="{{ url('/postToFacebook') }}">Facebook</a>
 
                 </div>
 

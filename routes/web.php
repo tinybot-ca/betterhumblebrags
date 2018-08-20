@@ -15,8 +15,9 @@ Route::get('/', 'HomeController@index');
 Route::post('/', 'HomeController@submit');
 Route::get('/edit', 'HomeController@edit');
 
-
-
+Route::get('/show', 'HomeController@show');
+Route::get('/twit', 'HomeController@twit');
+Route::get('/postToFacebook', 'HomeController@postToFacebook');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
